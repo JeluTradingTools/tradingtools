@@ -1,0 +1,15 @@
+/trading-tools
+├── index.html          # Main page
+├── calculator.html     # Pip & margin calculators
+├── calendar.html       # Investment calendar
+├── charts.html         # Real-time charts
+├── css/
+│   ├── styles.css      # Main styles
+│   └── themes.css      # Theme styles
+├── js/
+│   ├── main.js         # Core functionality
+│   ├── calculators.js  # Pip & margin calculations
+│   ├── calendar.js     # Calendar integration
+│   ├── charts.js       # Charting library
+│   └── api.js          # API integrations
+└── images/             # All visual assets

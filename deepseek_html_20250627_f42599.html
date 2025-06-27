@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Similar head section as index.html -->
+    <title>Calculators | Trading Tools Pro</title>
+</head>
+<body class="light-theme">
+    <!-- Similar header as index.html -->
+
+    <main class="calculator-page">
+        <section class="calculator-tabs">
+            <button class="calc-tab-btn active" data-calc="pip">Pip Calculator</button>
+            <button class="calc-tab-btn" data-calc="margin">Margin Calculator</button>
+            <button class="calc-tab-btn" data-calc="risk">Risk Calculator</button>
+        </section>
+
+        <div class="calculator-content active" id="pip-calculator">
+            <h3>Pip Value Calculator</h3>
+            <form id="pip-form">
+                <div class="form-group">
+                    <label for="pair-select">Currency Pair:</label>
+                    <select id="pair-select">
+                        <option value="EURUSD">EUR/USD</option>
+                        <!-- More forex pairs -->
+                        <option value="BTCUSD">BTC/USD</option>
+                        <!-- Crypto pairs -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="account-currency">Account Currency:</label>
+                    <select id="account-currency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <!-- More currencies -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="trade-size">Trade Size (Lots):</label>
+                    <input type="number" id="trade-size" min="0.01" step="0.01" value="1">
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+            <div class="results" id="pip-results">
+                <h4>Results</h4>
+                <p>Pip Value: <span id="pip-value">-</span></p>
+                <p>Pip Cost: <span id="pip-cost">-</span></p>
+            </div>
+        </div>
+
+        <div class="calculator-content" id="margin-calculator">
+            <!-- Similar structure for margin calculator -->
+        </div>
+
+        <section class="special-pairs">
+            <h3>Special Pairs Calculators</h3>
+            <div class="special-grid">
+                <div class="special-card" data-type="BOOM300">
+                    <h4>BOOM 300</h4>
+                    <div class="calc-form">
+                        <input type="number" placeholder="Investment" class="special-input">
+                        <button class="calculate-btn">Calculate</button>
+                        <div class="result"></div>
+                    </div>
+                </div>
+                <!-- Repeat for all BOOM, CRASH, VOLATILITY, STEP, JUMP pairs -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer same as index.html -->
+    <script src="js/calculators.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head section -->
+    <title>Economic Calendar | Trading Tools Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+</head>
+<body class="light-theme">
+    <!-- Header -->
+
+    <main class="calendar-page">
+        <section class="calendar-filters">
+            <div class="filter-group">
+                <label for="importance-filter">Importance:</label>
+                <select id="importance-filter">
+                    <option value="all">All</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="currency-filter">Currency:</label>
+                <select id="currency-filter">
+                    <option value="all">All</option>
+                    <option value="USD">USD</option>
+                    <!-- More currencies -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="date-range">Date Range:</label>
+                <select id="date-range">
+                    <option value="today">Today</option>
+                    <option value="week">This Week</option>
+                    <option value="month">This Month</option>
+                </select>
+            </div>
+        </section>
+
+        <div id="calendar"></div>
+
+        <section class="event-details" id="event-details">
+            <h3 id="event-title">Select an event to view details</h3>
+            <div class="event-content" id="event-content">
+                <p>Click on any calendar event to see detailed information here.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>

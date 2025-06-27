@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head section -->
+    <title>Live Charts | Trading Tools Pro</title>
+    <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@3.7.0/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body class="light-theme">
+    <!-- Header -->
+
+    <main class="charts-page">
+        <section class="chart-controls">
+            <div class="chart-selector">
+                <label for="symbol-select">Symbol:</label>
+                <select id="symbol-select">
+                    <option value="EURUSD">EUR/USD</option>
+                    <!-- More symbols -->
+                </select>
+            </div>
+            <div class="timeframe-selector">
+                <button class="timeframe-btn active" data-timeframe="1m">1m</button>
+                <button class="timeframe-btn" data-timeframe="5m">5m</button>
+                <!-- More timeframes -->
+            </div>
+            <div class="indicator-selector">
+                <label for="indicator-select">Indicators:</label>
+                <select id="indicator-select" multiple>
+                    <option value="sma">SMA</option>
+                    <option value="ema">EMA</option>
+                    <!-- More indicators -->
+                </select>
+            </div>
+        </section>
+
+        <div class="chart-container">
+            <div id="main-chart"></div>
+        </div>
+
+        <section class="chart-types">
+            <h3>Special Chart Types</h3>
+            <div class="chart-type-btns">
+                <button class="chart-type-btn" data-type="candlestick">Candlestick</button>
+                <button class="chart-type-btn" data-type="heikin-ashi">Heikin Ashi</button>
+                <button class="chart-type-btn" data-type="renko">Renko</button>
+                <button class="chart-type-btn" data-type="kagi">Kagi</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <script src="js/charts.js"></script>
+</body>
+</html>
